@@ -32,7 +32,7 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 proxies:
-  - name: R80:Vmess USA LA 2025-02-05
+  - name: Baput
     server: 104.22.24.131
     port: 80
     type: vmess
@@ -48,7 +48,7 @@ proxies:
       headers:
         Host: us-21.hihu.net
     udp: true
-  - name: R80:Vmess USA Virginia 2025-02-05
+  - name: Bapyu
     server: 104.26.7.171
     port: 80
     type: vmess
@@ -64,7 +64,7 @@ proxies:
       headers:
         Host: us-23.hihu.net
     udp: true
-  - name: R80:Vmess NL Fast (IPv4 & IPv6) 2025-02-05
+  - name: Napi
     server: 104.22.24.131
     port: 80
     type: vmess
@@ -80,7 +80,7 @@ proxies:
       headers:
         Host: eu-2.hihu.net
     udp: true
-  - name: R80:Vmess Singapore HE-1 Limit 2025-02-05
+  - name: Dono
     server: 104.26.7.171
     port: 80
     type: vmess
@@ -100,10 +100,10 @@ proxy-groups:
   - name: FASTSSH-SSHKIT-HOWDY
     type: select
     proxies:
-      - R80:Vmess USA LA 2025-02-05
-      - R80:Vmess USA Virginia 2025-02-05
-      - R80:Vmess NL Fast (IPv4 & IPv6) 2025-02-05
-      - R80:Vmess Singapore HE-1 Limit 2025-02-05
+      - Baput
+      - Bapyu
+      - Napi
+      - Dono
       - DIRECT
 rules:
   - MATCH,FASTSSH-SSHKIT-HOWDY
